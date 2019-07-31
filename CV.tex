@@ -1,0 +1,379 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CV.tex
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+\usepackage{fontspec}
+\setmainfont[BoldFont={Latin Modern Roman/B}]{CMU Concrete}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Yehowshua Immanuel}
+\newcommand{\CVTitle}{Yehowshua Immanuel}
+\newcommand{\CVNote}{CV compiled on {\today} for Acme Corporation}
+\newcommand{\CVWebpage}{yehowshuaimmanuel.com/about}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+\href{yehowshuaimmanuel.com}
+\par
+\href{mailto:yimmanuel3@gatech.edu}
+{yimmanuel3@gatech.edu}
+\,\SubBulletSymbol\,
++1\,(678)\,216-6333
+\,\SubBulletSymbol\,
+\href{\CVWebpage}
+{\url{\CVWebpage}}
+\end{SubTitle}
+
+\begin{Body}
+
+%%%%%%%%%%%%%%%
+%% OBJECTIVE %%
+%%%%%%%%%%%%%%%
+\Section
+{Objective}
+{Objective}
+{PDF:Objective}
+\BulletItem
+Self directed individual with more than 9 hobbyist software and hardware projects matured in the past 6 months. Currently seeking an internship in a competitive environment involving writing backend software, kernel level development, and or hardware level design.
+
+\end
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+\Entry
+\href{https://www.gatech.edu}
+{\textbf{Georgia Institute of Technology | Atlanta, GA}}
+\hfill
+\DatestampYMD{2019}{01}{07} --
+Present
+
+\BulletItem
+Masters in Computer Engineering
+
+\BigGap
+\Entry
+\href{https://www.gatech.edu}
+{\textbf{Georgia Institute of Technology | Atlanta, GA}}
+\hfill
+\DatestampYMD{2017}{05}{15} --
+\DatestampYMD{2018}{12}{13} 
+
+\BulletItem
+Bachelor of Science in Computer Engineering
+\hfill
+GPA: 3.62 / 4.0
+
+\BigGap
+\Entry
+\href{http://kennesaw.edu}
+{\textbf{Kennesaw State University | Marietta, GA}}
+\hfill
+\DatestampYMD{2016}{06}{15} --
+\DatestampYMD{2017}{05}{15}
+
+\BulletItem
+Transfer with 60 credit hours.
+\hfill
+GPA: 4.0 / 4.0
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Skills}
+{Skills}
+{PDF:Skills}
+
+\Entry
+\textbf{Computing}
+\begin{Detail}
+\BulletItem
+\textbf{Software Languages}
+\SubBulletItem
+C(expert in C, proficient in rest), C++, Java, Python, Basic HTML, BASH(and most standard UNIX utils.)
+\BulletItem
+\textbf{Hardware Languages}
+\SubBulletItem
+VHDL, Verilog, Some Bluespec
+\BulletItem
+\textbf{Software Tools}
+\SubBulletItem
+Docker, Git, \LaTeX, VIM, Regular Expressions, some Apache
+\BulletItem
+\textbf{Development Tools}
+\SubBulletItem
+GNU/BSD Make, GCC, Sub tools(ie: ar, nm)
+\BulletItem
+\textbf{APIs and Protocols}
+\SubBulletItem
+REST, UART 
+\BulletItem
+\textbf{Hardware}
+\SubBulletItem
+Raspberry Pi, FPGAs, Arduino, Embedded Arm, PCB Design
+\end{Detail}
+
+\BigGap
+\Entry
+\textbf{Arts}
+\begin{Detail}
+\BulletItem
+\textbf{Music}
+\SubBulletItem
+Piano, Bass, LMMS(Linux MultiMedia Studio)
+\BulletItem
+\textbf{Film and Animation}
+\SubBulletItem
+Blender, Synfig Studio, Inkscape
+\BulletItem
+\textbf{Languages}
+\SubBulletItem
+English, proficient in French
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Experience}
+{Experience}
+{PDF:Experience}
+
+\Entry
+\href{http://synergy.ece.gatech.edu}
+{\textbf{Synergy Lab}},
+ECE Department, Georgia Tech
+\begin{Detail}
+\BulletItem
+Undergraduate Research Assistant,
+\hfill
+\DatestampYMD{2018}{05}{15} --
+\DatestampYMD{2018}{08}{15}
+\SubBulletItem
+Implemented Verilog RAM controller
+\SubBulletItem
+Deployed and maintained documentation server
+\end{Detail}
+
+\Entry
+\href{https://www.gtri.gatech.edu/laboratories/electronic-systems-laboratory}
+{\textbf{Electronic Systems Warfare Lab}},
+Georgia Tech Research Institute
+\begin{Detail}
+\BulletItem
+Student Assistant
+\hfill
+\DatestampYMD{2018}{05}{15} --
+\DatestampYMD{2018}{08}{15}
+\SubBulletItem
+Scripted and deployed Git version control commit rules
+\SubBulletItem
+Built BSD POSIX Libraries for VXWorks RTOS and wrote accompanying drivers.
+\end{Detail}
+
+\Entry
+\href{http://retrotech.library.gatech.edu}
+{\textbf{RetroTech}},
+Georgia Tech
+\begin{Detail}
+\BulletItem
+Student Assistant
+\hfill
+\DatestampYMD{2017}{08}{15} --
+\DatestampYMD{2018}{05}{15}
+\SubBulletItem
+Diagnosed and restored legacy computers such as the Macintosh SE 1987. Deployed Verilog logic analyzer in FPGA to facilitate this process
+\end{Detail}
+
+\Entry
+\href{https://www.gtri.gatech.edu/laboratories/sensors-and-electromagnetic-applications-laboratory}
+{\textbf{Sensors and Electromagnetic Applications Laboratory}},
+Georgia Tech Research Institute
+\begin{Detail}
+\BulletItem
+Student Assistant
+\hfill
+\DatestampYMD{2017}{05}{15} --
+\DatestampYMD{2017}{08}{15}
+\SubBulletItem
+Designed a printed circuit power board for an airborne radar. 
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PROJECTS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Projects}
+{Projects}
+{PDF:Projects}
+
+\Entry
+\href{https://yehowshuaimmanuel.com}
+{\textbf{Hobby Wiki Server}}
+\hfill
+\DatestampYMD{2018}{02}{15} --
+Present
+\begin{Detail}
+\BulletItem
+Maintain my own wiki server that allows students to contribute their mathematical findings and explanations for
+certain challenging questions.
+\end{Detail}
+\Gap
+
+\Entry
+\href{https://github.com/BracketMaster/quick-ghdl-toolchain}
+{\textbf{VHDL Toolchain}},
+ECE Department, Georgia Tech
+\hfill
+\DatestampYMD{2018}{04}{15}
+\DatestampYMD{2018}{05}{15}
+\begin{Detail}
+\BulletItem
+Published my GHDL toolchain workflow installer to help fellow Computer Architecture students.
+\end{Detail}
+\Gap
+
+\Entry
+{\textbf{Instruction Wrapper}},
+ECE Department, Georgia Tech
+\hfill
+\DatestampYMD{2017}{11}{15}
+\begin{Detail}
+\BulletItem
+Wrote instruction parser driver for instructional FPGA to be adopted by ECE department at Georgia Tech
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% RELEVANT COURSEWORK %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Relevant Coursework}
+{Relevant Coursework}
+{PDF:Relevant Coursework}
+
+\Entry
+{\textbf{Digital Signal Processing}}
+\begin{Detail}
+\BulletItem
+Applied Discrete Fourier transform in software and searched for
+waveform patterns.
+\end{Detail}
+
+\Entry
+{\textbf{Computer Architecture and Concurrency}}
+\begin{Detail}
+\BulletItem
+Simulated designed and simulated various MIPS CPU implementations
+\end{Detail}
+\Gap
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LEADERSHIP %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Leadership}
+{Leadership}
+{PDF:Leadership}
+
+\Entry
+{\textbf{Chi Alpha  Worship Band}}
+\hfill
+\DatestampYMD{2018}{08}{15} --
+Present
+\begin{Detail}
+\BulletItem
+Played bass for worship team.
+\end{Detail}
+\Gap
+
+\Entry
+{\textbf{FutureTech Middle School Outreach}}
+\hfill
+\DatestampYMD{2018}{03}{15}
+\begin{Detail}
+\BulletItem
+Lead FutureTech Exhibit at Georgia Tech to introduce middle schoolers to Computer Engineering
+\end{Detail}
+\Gap
+
+\Entry
+{\textbf{BCM Worship Band}}
+\hfill
+\DatestampYMD{2016}{08}{15} --
+\DatestampYMD{2017}{05}{15}
+\begin{Detail}
+\BulletItem
+Played piano for worship team.
+\end{Detail}
+\Gap
+%%%%%%%%%%%%
+%% CV NOTE %
+%%%%%%%%%%%%
+%
+%\BigGap
+%\UseNoteFont%
+%\null\hfill%
+%[\textit{\CVNote}]
+\end{document}
