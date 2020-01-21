@@ -14,6 +14,7 @@
 
 \documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
 \usepackage{fontspec}
+\usepackage[colorlinks=true]{hyperref}
 \setmainfont[BoldFont={Latin Modern Roman/B}]{CMU Concrete}
 % Class options:
 % a4paper, letterpaper, nonstopmode, draftmode
@@ -34,7 +35,7 @@
 pdftitle={\CVTitle},
 pdfauthor={\CVAuthor},
 pdfsubject={\CVWebpage},
-pdfcreator={XeLaTeX},
+pdfcreator={luaLaTeX},
 pdfproducer={},
 pdfkeywords={},
 unicode=true,
@@ -77,14 +78,14 @@ breaklinks}
 \begin{Body}
 
 %%%%%%%%%%%%%%%
-%% OBJECTIVE %%
+%% INTERESTS %%
 %%%%%%%%%%%%%%%
 \Section
-{Objective}
-{Objective}
-{PDF:Objective}
+{Interests}
+{Interests}
+{PDF:Interests}
 \BulletItem
-Self directed individual with more than 9 hobbyist software and hardware projects matured in the past 6 months. Currently seeking an internship in a competitive environment involving writing backend software, kernel level development, and or hardware level design.
+Compilers, ISA Design, Hardware and Verification Language Tooling, Mathematics and Electromagnetics
 
 \end
 %%%%%%%%%%%%%%%
@@ -152,7 +153,7 @@ C(expert in C, proficient in rest), C++, Java, Python, Basic HTML, BASH(and most
 \BulletItem
 \textbf{Hardware Languages}
 \SubBulletItem
-VHDL, Verilog, Some Bluespec
+VHDL, Verilog, Python Migen HDL, Some Bluespec
 \BulletItem
 \textbf{Software Tools}
 \SubBulletItem
@@ -164,7 +165,7 @@ GNU/BSD Make, GCC, Sub tools(ie: ar, nm)
 \BulletItem
 \textbf{APIs and Protocols}
 \SubBulletItem
-REST, UART 
+Ethernet, UART 
 \BulletItem
 \textbf{Hardware}
 \SubBulletItem
@@ -204,14 +205,12 @@ English, proficient in French
 ECE Department, Georgia Tech
 \begin{Detail}
 \BulletItem
-Undergraduate Research Assistant,
+Master's Student,
 \hfill
 \DatestampYMD{2018}{05}{15} --
 \DatestampYMD{2018}{08}{15}
 \SubBulletItem
-Implemented Verilog RAM controller
-\SubBulletItem
-Deployed and maintained documentation server
+Implementing a reconfigurable ML hardware accelerator in an FPGA and accompanying compiler+driver stack
 \end{Detail}
 
 \Entry
@@ -222,8 +221,10 @@ Georgia Tech Research Institute
 \BulletItem
 Student Assistant
 \hfill
-\DatestampYMD{2018}{05}{15} --
-\DatestampYMD{2018}{08}{15}
+Summer 2018 and 2019
+\SubBulletItem
+Verified the mathematics of various mechanical models of simulated agents 
+in the Scrimmage simulation engine.
 \SubBulletItem
 Scripted and deployed Git version control commit rules
 \SubBulletItem
@@ -268,63 +269,39 @@ Designed a printed circuit power board for an airborne radar.
 {PDF:Projects}
 
 \Entry
-\href{https://yehowshuaimmanuel.com}
-{\textbf{Hobby Wiki Server}}
+\href{https://github.com/ghdl/ghdl}
+{\textbf{GHDL Maintainer}}
 \hfill
-\DatestampYMD{2018}{02}{15} --
+\DatestampYMD{2020}{01} --
 Present
 \begin{Detail}
 \BulletItem
-Maintain my own wiki server that allows students to contribute their mathematical findings and explanations for
-certain challenging questions.
+One of the maintainers of the Free and Open Source(FOSS) VHDL simulator GHDL.
 \end{Detail}
 \Gap
 
 \Entry
-\href{https://github.com/BracketMaster/quick-ghdl-toolchain}
-{\textbf{VHDL Toolchain}},
-ECE Department, Georgia Tech
+\href{https://libre-riscv.org}
+{\textbf{LibreSOC Engineer}},
 \hfill
-\DatestampYMD{2018}{04}{15}
-\DatestampYMD{2018}{05}{15}
+\DatestampYMD{2019}{12} --
+Present
 \begin{Detail}
 \BulletItem
-Published my GHDL toolchain workflow installer to help fellow Computer Architecture students.
+I am a member of the LibreSOC organization currently funded by NLNet to create an
+ open source RISCV capable complete SOC with a GPU that is open source to the bedrock.
 \end{Detail}
 \Gap
 
 \Entry
-{\textbf{Instruction Wrapper}},
-ECE Department, Georgia Tech
+\href{https://github.com/m-labs/nmigen}
+{\textbf{nMigen Verilator Backend}},
 \hfill
-\DatestampYMD{2017}{11}{15}
+\DatestampYMD{2019}{12} --
+Present
 \begin{Detail}
 \BulletItem
-Wrote instruction parser driver for instructional FPGA to be adopted by ECE department at Georgia Tech
-\end{Detail}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%
-%% RELEVANT COURSEWORK %%
-%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\Section
-{Relevant Coursework}
-{Relevant Coursework}
-{PDF:Relevant Coursework}
-
-\Entry
-{\textbf{Digital Signal Processing}}
-\begin{Detail}
-\BulletItem
-Applied Discrete Fourier transform in software and searched for
-waveform patterns.
-\end{Detail}
-
-\Entry
-{\textbf{Computer Architecture and Concurrency}}
-\begin{Detail}
-\BulletItem
-Simulated designed and simulated various MIPS CPU implementations
+Currently adding Verilator simulator backend support to the nMigen Python HDL.
 \end{Detail}
 \Gap
 
@@ -367,13 +344,4 @@ Lead FutureTech Exhibit at Georgia Tech to introduce middle schoolers to Compute
 \BulletItem
 Played piano for worship team.
 \end{Detail}
-\Gap
-%%%%%%%%%%%%
-%% CV NOTE %
-%%%%%%%%%%%%
-%
-%\BigGap
-%\UseNoteFont%
-%\null\hfill%
-%[\textit{\CVNote}]
 \end{document}
