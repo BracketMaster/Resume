@@ -282,8 +282,8 @@ BoldItalicFont=FreeSerifBoldItalic]
 %
 \newcommand{\BulletItem}
 {\par\vspace{0\baselineskip}%
-\savebox{\BulletItemIndentBox}{\hspace{1.5mm}\BulletSymbol\hspace{1.5mm}}%
-\settowidth{\BulletItemIndentWidth}{\usebox{\BulletItemIndentBox}}%
+\savebox{\BulletItemIndentBox}{\hspace{1.5mm}\hspace{1.5mm}}%
+\settowidth{\BulletItemIndentWidth}{\usebox}%
 \parshape 2%
 \labelwidth \linewidth%
 \dimexpr\labelwidth+\BulletItemIndentWidth\relax \dimexpr\linewidth-\BulletItemIndentWidth\relax%
@@ -317,7 +317,7 @@ BoldItalicFont=FreeSerifBoldItalic]
 % Macro: Item (aligns horizontally with BulletItem).
 \newcommand{\Item}
 {\par\vspace{0\baselineskip}%
-\savebox{\BulletItemIndentBox}{\hphantom{\hspace{1.5mm}\BulletSymbol\hspace{1.5mm}}}%
+\savebox{\BulletItemIndentBox}{\hphantom{\hspace{1.5mm}\hspace{1.5mm}}}%
 \settowidth{\BulletItemIndentWidth}{\usebox{\BulletItemIndentBox}}%
 \parshape 2%
 \labelwidth \linewidth%
